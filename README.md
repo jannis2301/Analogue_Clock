@@ -6,4 +6,5 @@ It is an application that displays the current time on an analogue clock interfa
 
 - HTML
 - CSS
-- JavaScript ES6
+- Typescript
+- Vite

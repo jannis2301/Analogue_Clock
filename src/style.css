@@ -14,16 +14,17 @@ body {
 }
 
 .clock {
-  width: 24rem;
-  height: 24rem;
-  border: 20px solid white;
+  --clock-size: clamp(18rem, 4vw, 24rem);
+  width: var(--clock-size);
+  height: var(--clock-size);
+  border: 1.25rem solid #fff;
   border-radius: 50%;
-  margin: 50px auto;
+  margin: 3rem auto;
   position: relative;
   padding: 2rem;
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
     inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
-  background-image: url('../img/clock.png');
+  background-image: url('./clock.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -72,4 +73,8 @@ body {
   left: 0;
   background: transparent;
   z-index: -1;
+}
+
+.no-transition {
+  transition: none;
 }
